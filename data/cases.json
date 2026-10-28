@@ -1,0 +1,1263 @@
+{
+  "meta": {
+    "name": "NFP AI Use-Case Tracker",
+    "description": "Named Australian not-for-profits using, piloting or funding AI, each with a source and a verbatim quote.",
+    "version": "2026-10-29",
+    "last_updated": "2026-10-29",
+    "schema": "schema.json"
+  },
+  "cases": [
+    {
+      "id": "alcohol-and-drug-foundation--client-facing-chatbot",
+      "status": "tracker",
+      "organisation": "Alcohol and Drug Foundation",
+      "org_type": "Charity",
+      "state": "National",
+      "cause_area": "alcohol and other drugs",
+      "category": "client-facing chatbot or assistant",
+      "use_case": "Runs 'Dib', a chatbot that gives the public drug information.",
+      "partner": "Retrieval-based chatbot",
+      "stage": "deployed",
+      "quote": "friendly, knowledgeable bot providing non-judgmental, trustworthy information",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        },
+        {
+          "title": "Infoxchange (13 Apr 2026)",
+          "url": "https://www.infoxchange.org/au/news/2026/04/announcing-finalists-2026-australian-not-profit-technology-awards"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-10-01",
+      "review_reason": ""
+    },
+    {
+      "id": "anglicare-victoria--internal-operations",
+      "status": "tracker",
+      "organisation": "Anglicare Victoria",
+      "org_type": "Charity",
+      "state": "VIC",
+      "cause_area": "child, youth and family services",
+      "category": "internal operations or productivity",
+      "use_case": "Heidi AI digital scribe captures and structures case notes for frontline caseworkers, reducing admin load during client sessions.",
+      "partner": "Heidi Health",
+      "stage": "deployed",
+      "quote": "We are now scaling the implementation of Heidi AI for frontline staff in partnership with Heidi Health in a staged manner of which we continue to measure the benefits.",
+      "sources": [
+        {
+          "title": "iTnews (21 Sep 2026)",
+          "url": "https://www.itnews.com.au/news/anglicare-victoria-secures-its-ai-adoption-629020"
+        }
+      ],
+      "first_seen": "2026-10-07",
+      "last_seen": "2026-10-07",
+      "review_reason": ""
+    },
+    {
+      "id": "anglicaresa--internal-operations",
+      "status": "tracker",
+      "organisation": "AnglicareSA",
+      "org_type": "Charity",
+      "state": "SA",
+      "cause_area": "community services and aged care",
+      "category": "internal operations or productivity",
+      "use_case": "Has adopted TechnologyOne's Plus AI so staff can query organisational business data in natural language.",
+      "partner": "TechnologyOne (Plus)",
+      "stage": "deployed",
+      "quote": "AnglicareSA is among the latest organisations to adopt the software",
+      "sources": [
+        {
+          "title": "IT Brief Australia (23 Sep 2026)",
+          "url": "https://itbrief.com.au/story/australian-care-groups-adopt-technologyone-s-plus-ai"
+        }
+      ],
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "review_reason": ""
+    },
+    {
+      "id": "australian-literacy-and-numeracy-foundation--service-delivery",
+      "status": "tracker",
+      "organisation": "Australian Literacy and Numeracy Foundation",
+      "org_type": "Charity",
+      "state": "National",
+      "cause_area": "First Nations languages, literacy",
+      "category": "service delivery or decision support",
+      "use_case": "Living First Language platform uses automatic processing to help preserve First Nations languages.",
+      "partner": "Living First Language platform",
+      "stage": "deployed",
+      "quote": "preserving First Nations languages via the use of automatic processing",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_reason": ""
+    },
+    {
+      "id": "australian-nursing-home-foundation--service-delivery",
+      "status": "tracker",
+      "organisation": "Australian Nursing Home Foundation",
+      "org_type": "Charity",
+      "state": "NSW",
+      "cause_area": "aged care (dementia)",
+      "category": "service delivery or decision support",
+      "use_case": "Uses 'Daisy', an AI-enabled humanoid robot, to run group exercise, music and multilingual conversation with residents living with dementia in its Sydney aged care homes.",
+      "partner": "",
+      "stage": "deployed",
+      "quote": "can lead group exercise routines, play music and speak in languages such as Mandarin and Cantonese",
+      "sources": [
+        {
+          "title": "ABC News (17 Apr 2026)",
+          "url": "https://www.abc.net.au/news/2026-04-17/ai-aged-care-boom-and-risks-in-australia/106561812"
+        },
+        {
+          "title": "Australian Ageing Agenda (2 Jul 2025)",
+          "url": "https://www.australianageingagenda.com.au/technology/robot-companion-shows-off-her-potential/"
+        }
+      ],
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "review_reason": ""
+    },
+    {
+      "id": "australian-red-cross-lifeblood--data-analysis",
+      "status": "tracker",
+      "organisation": "Australian Red Cross Lifeblood",
+      "org_type": "Charity",
+      "state": "National",
+      "cause_area": "health, blood services",
+      "category": "data analysis, research or evaluation",
+      "use_case": "Tool that scans research materials and produces short plain-language summaries linked to the original sources.",
+      "partner": "DiUS",
+      "stage": "deployed",
+      "quote": "scans materials to generate short, plain-language summaries with links to original sources",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_reason": ""
+    },
+    {
+      "id": "back-on-track-foundation--service-delivery",
+      "status": "tracker",
+      "organisation": "Back on Track Foundation",
+      "org_type": "Charity",
+      "state": "",
+      "cause_area": "health, education",
+      "category": "service delivery or decision support",
+      "use_case": "Uses AI to support the schooling of children recovering from cancer.",
+      "partner": "",
+      "stage": "unclear",
+      "quote": "using AI to support the education of children who are recovering from cancer",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_reason": ""
+    },
+    {
+      "id": "baptistcare--internal-operations",
+      "status": "tracker",
+      "organisation": "BaptistCare",
+      "org_type": "Charity",
+      "state": "NSW",
+      "cause_area": "aged care, community services",
+      "category": "internal operations or productivity",
+      "use_case": "Staff use Microsoft 365 Copilot for documents, information lookup and problem-solving.",
+      "partner": "Microsoft 365 Copilot",
+      "stage": "deployed",
+      "quote": "using Microsoft 365 Copilot to save time and streamline information",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_reason": ""
+    },
+    {
+      "id": "clean-up-australia--data-analysis",
+      "status": "tracker",
+      "organisation": "Clean Up Australia",
+      "org_type": "Charity",
+      "state": "National",
+      "cause_area": "environment",
+      "category": "data analysis, research or evaluation",
+      "use_case": "AI image analysis assesses and categorises thousands of volunteer-submitted litter photos.",
+      "partner": "",
+      "stage": "deployed",
+      "quote": "employs AI image analysis to assess thousands of supplied photos",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_reason": ""
+    },
+    {
+      "id": "cool-org--service-delivery",
+      "status": "tracker",
+      "organisation": "Cool.org",
+      "org_type": "NFP",
+      "state": "National",
+      "cause_area": "education, sustainability",
+      "category": "service delivery or decision support",
+      "use_case": "Machine learning generates curriculum-aligned lesson plans for teachers.",
+      "partner": "",
+      "stage": "deployed",
+      "quote": "employs machine learning to generate lesson plans based on known curriculums",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_reason": ""
+    },
+    {
+      "id": "eastern-palliative-care--service-delivery",
+      "status": "tracker",
+      "organisation": "Eastern Palliative Care",
+      "org_type": "Charity",
+      "state": "VIC",
+      "cause_area": "palliative care",
+      "category": "service delivery or decision support",
+      "use_case": "AI transcription helps staff record and write up the life stories of home care clients.",
+      "partner": "",
+      "stage": "deployed",
+      "quote": "uses technology to help transcribe and write about the life stories of home care clients",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_reason": ""
+    },
+    {
+      "id": "financial-counselling-australia--data-analysis",
+      "status": "tracker",
+      "organisation": "Financial Counselling Australia",
+      "org_type": "NFP",
+      "state": "National",
+      "cause_area": "financial counselling",
+      "category": "data analysis, research or evaluation",
+      "use_case": "A data and analytics platform using AI-assisted classification to analyse financial counselling data for the peak body.",
+      "partner": "",
+      "stage": "unclear",
+      "quote": "through bespoke data extraction, engineering, AI-assisted classification and advanced analytics",
+      "sources": [
+        {
+          "title": "Infoxchange (13 Apr 2026)",
+          "url": "https://www.infoxchange.org/au/news/2026/04/announcing-finalists-2026-australian-not-profit-technology-awards"
+        }
+      ],
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "review_reason": ""
+    },
+    {
+      "id": "food-ladder--data-analysis",
+      "status": "tracker",
+      "organisation": "Food Ladder",
+      "org_type": "NFP",
+      "state": "NSW",
+      "cause_area": "food security and student wellbeing",
+      "category": "data analysis, research or evaluation",
+      "use_case": "Four-year research program using quantum machine learning to model resource-efficient greenhouse and hydroponic food growing, and AI with wearable data to measure greenhouse programs' effect on student wellbeing.",
+      "partner": "CSIRO (Industry PhD program); University of Southern Queensland",
+      "stage": "funded",
+      "quote": "Food Ladder partners with CSIRO and the University of Southern Queensland for a pioneering research program.",
+      "sources": [
+        {
+          "title": "Third Sector (10 Oct 2025)",
+          "url": "https://thirdsector.com.au/food-ladder-tackles-food-security-and-student-wellbeing-with-quantum-ai/"
+        }
+      ],
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "review_reason": ""
+    },
+    {
+      "id": "food-ladder--service-delivery",
+      "status": "tracker",
+      "organisation": "Food Ladder",
+      "org_type": "NFP",
+      "state": "NSW",
+      "cause_area": "food security and education",
+      "category": "service delivery or decision support",
+      "use_case": "IBM AI tool generates curriculum-aligned lesson plans, tailored for students with disabilities or learning needs, for teachers running Food Ladder's school greenhouse programs.",
+      "partner": "IBM",
+      "stage": "deployed",
+      "quote": "whole units of learning can be created in seconds.",
+      "sources": [
+        {
+          "title": "Women's Agenda (20 Mar 2025)",
+          "url": "https://womensagenda.com.au/latest/food-ladder-and-ibm-join-forces-to-launch-ai-powered-education-in-school-greenhouses/"
+        }
+      ],
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "review_reason": ""
+    },
+    {
+      "id": "greenpeace-australia-pacific--fundraising",
+      "status": "tracker",
+      "organisation": "Greenpeace Australia Pacific",
+      "org_type": "NFP",
+      "state": "National",
+      "cause_area": "environment",
+      "category": "fundraising, marketing or communications",
+      "use_case": "Predictive donor-retention model to target direct mail, retaining 500+ donors it might have lost.",
+      "partner": "Dataro",
+      "stage": "deployed",
+      "quote": "used a predictive tool to retain more than 500 donors it might otherwise have lost",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_reason": ""
+    },
+    {
+      "id": "justice-connect--intake",
+      "status": "tracker",
+      "organisation": "Justice Connect",
+      "org_type": "Community legal organisation",
+      "state": "National",
+      "cause_area": "legal help",
+      "category": "intake, triage or referral",
+      "use_case": "Natural language processing model that identifies people's legal issues from their own words and refers them to the right legal help.",
+      "partner": "University of Melbourne; ARC Linkage Grant",
+      "stage": "deployed",
+      "quote": "identifies people's legal issues and connects them to the right support",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        },
+        {
+          "title": "Justice Connect: Our AI project",
+          "url": "https://justiceconnect.org.au/innovation/legal-help-experience/ai-project/"
+        },
+        {
+          "title": "Justice Connect (17 Jul 2026)",
+          "url": "https://justiceconnect.org.au/latest/2026/2026/how-sector-powered-ai-is-helping-people-find-right-legal-help-sooner/"
+        },
+        {
+          "title": "University of Melbourne (5 Jun 2026)",
+          "url": "https://about.unimelb.edu.au/news-resources/awards-and-achievements/awards-and-prizes/community-engagement-award,-2026-financial-review-ai-awards"
+        },
+        {
+          "title": "Justice Connect: AI model EOI (20 Mar 2026)",
+          "url": "https://justiceconnect.org.au/innovation/access-to-justice/ai-api/eoi/"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-10-27",
+      "review_reason": ""
+    },
+    {
+      "id": "justice-connect--internal-operations",
+      "status": "tracker",
+      "organisation": "Justice Connect",
+      "org_type": "Community legal centre",
+      "state": "National",
+      "cause_area": "legal help and homelessness",
+      "category": "internal operations or productivity",
+      "use_case": "Pilot of the Legora legal AI platform across Justice Connect's pro bono legal teams (connections and homeless law programs) for legal research, document review, drafting and file management.",
+      "partner": "Legora; HSF Kramer",
+      "stage": "pilot",
+      "quote": "The initiative with Justice Connect will focus on the connections and homeless law programs.",
+      "sources": [
+        {
+          "title": "Lawyers Weekly (30 Sep 2026)",
+          "url": "https://www.lawyersweekly.com.au/biglaw/45118-justice-connect-adds-legora-ai-to-pro-bono-work"
+        }
+      ],
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "review_reason": ""
+    },
+    {
+      "id": "kara-tech--service-delivery",
+      "status": "tracker",
+      "organisation": "Kara Tech",
+      "org_type": "Unclear",
+      "state": "",
+      "cause_area": "disability, Deaf community",
+      "category": "service delivery or decision support",
+      "use_case": "AI-generated sign language for people with severe hearing loss.",
+      "partner": "",
+      "stage": "pilot",
+      "quote": "an AI-generated sign language system that can be used by those with severe hearing loss",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_reason": ""
+    },
+    {
+      "id": "lawright--advocacy",
+      "status": "tracker",
+      "organisation": "LawRight",
+      "org_type": "Community legal centre",
+      "state": "QLD",
+      "cause_area": "legal help, consumer credit",
+      "category": "advocacy, policy or legal",
+      "use_case": "Piloted 'Credit Guardian' AI to analyse clients' bank statements and loan agreements for irresponsible lending.",
+      "partner": "MinterEllison",
+      "stage": "pilot",
+      "quote": "piloted the Credit Guardian AI tool to analyse bank statements and loan agreements",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_reason": ""
+    },
+    {
+      "id": "life-without-barriers--internal-operations",
+      "status": "tracker",
+      "organisation": "Life Without Barriers",
+      "org_type": "Charity",
+      "state": "National",
+      "cause_area": "disability, child and family care",
+      "category": "internal operations or productivity",
+      "use_case": "Support workers piloted Beam's Magic Notes AI to draft client case notes and reports, cutting admin time.",
+      "partner": "Beam (Magic Notes)",
+      "stage": "pilot",
+      "quote": "In Australia, the company has been working with Life Without Barriers, a national not-for-profit care and support provider, on a pilot involving support workers.",
+      "sources": [
+        {
+          "title": "IT Brief Australia (30 Apr 2026)",
+          "url": "https://itbrief.com.au/story/beam-launches-ai-social-services-tools-in-australia"
+        },
+        {
+          "title": "iTWire (2026)",
+          "url": "https://itwire.com/business-it-news/data/beam-launches-in-australia-bringing-purpose-built-ai-to-the-social-services-sector"
+        }
+      ],
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "review_reason": ""
+    },
+    {
+      "id": "lutheran-services--internal-operations",
+      "status": "tracker",
+      "organisation": "Lutheran Services",
+      "org_type": "Charity",
+      "state": "QLD",
+      "cause_area": "aged care and community services",
+      "category": "internal operations or productivity",
+      "use_case": "Adding TechnologyOne's Plus AI alongside other AI and automation to improve efficiency and support for staff, residents and clients.",
+      "partner": "TechnologyOne (Plus)",
+      "stage": "deployed",
+      "quote": "Lutheran Services is adding the software alongside artificial intelligence and automation measures aimed at improving efficiency and support for staff, residents and clients.",
+      "sources": [
+        {
+          "title": "IT Brief Australia (23 Sep 2026)",
+          "url": "https://itbrief.com.au/story/australian-care-groups-adopt-technologyone-s-plus-ai"
+        },
+        {
+          "title": "Pulse+IT (25 Sep 2026)",
+          "url": "https://www.pulseit.news/australian-digital-health/technologyone-plus-adopted-by-aged-care-community-providers/"
+        }
+      ],
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-06",
+      "review_reason": ""
+    },
+    {
+      "id": "marrickville-legal-centre--intake",
+      "status": "tracker",
+      "organisation": "Marrickville Legal Centre",
+      "org_type": "Community legal centre",
+      "state": "NSW",
+      "cause_area": "legal help",
+      "category": "intake, triage or referral",
+      "use_case": "'LegalBot' virtual assistant to check client eligibility, give basic traffic-law information and book solicitor appointments.",
+      "partner": "NSW Access to Justice Innovation Fund ($250k)",
+      "stage": "funded",
+      "quote": "LegalBot will help clients determine eligibility for services and arrange private consultation with a solicitor.",
+      "sources": [
+        {
+          "title": "Community Legal Centres NSW",
+          "url": "https://www.clcnsw.org.au/marrickville-legal-centre-pioneering-ai-innovate-access-justice"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_reason": ""
+    },
+    {
+      "id": "mecwacare--service-delivery",
+      "status": "tracker",
+      "organisation": "mecwacare",
+      "org_type": "NFP",
+      "state": "VIC",
+      "cause_area": "aged care",
+      "category": "service delivery or decision support",
+      "use_case": "InteliCare's AI platform combines sensors, predictive analytics and nurse-call to flag early signs of resident distress such as fall risk, after a trial and a five-year deal to roll out across 22 residential homes.",
+      "partner": "InteliCare",
+      "stage": "pilot",
+      "quote": "The rollout is set to benefit approximately 1,600 residents by enhancing clinical monitoring and staff efficiency.",
+      "sources": [
+        {
+          "title": "CFOtech Australia (27 Aug 2025)",
+          "url": "https://cfotech.com.au/story/mecwacare-trials-intelicare-tech-to-enhance-aged-care-safety"
+        },
+        {
+          "title": "Grafa (12 Mar 2026)",
+          "url": "https://grafa.com/en/news/australia/intelicare-secures-landmark-8-8m-mecwacare-contract"
+        }
+      ],
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "review_reason": ""
+    },
+    {
+      "id": "national-justice-project--intake",
+      "status": "tracker",
+      "organisation": "National Justice Project",
+      "org_type": "NFP",
+      "state": "NSW",
+      "cause_area": "access to justice, human rights",
+      "category": "intake, triage or referral",
+      "use_case": "'Hear Me Out' generative AI tool helps people work out which of ~300 complaint bodies to take their complaint to.",
+      "partner": "NSW Access to Justice Innovation Fund; UNSW Kaldor Centre",
+      "stage": "deployed",
+      "quote": "Hear Me Out was built to cut through this confusion, ensuring that people can navigate their options quickly and easily.",
+      "sources": [
+        {
+          "title": "Lawyers Weekly / The Lawyer Mag (24 Mar 2025)",
+          "url": "https://www.thelawyermag.com/au/news/general/ai-powers-new-complaint-platform-by-national-justice-project/529505"
+        }
+      ],
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "review_reason": ""
+    },
+    {
+      "id": "pcyc-queensland--internal-operations",
+      "status": "tracker",
+      "organisation": "PCYC Queensland",
+      "org_type": "Charity",
+      "state": "QLD",
+      "cause_area": "youth and community",
+      "category": "internal operations or productivity",
+      "use_case": "Added TechnologyOne's Plus AI to its ERP so staff can query finance, HR, payroll and supply-chain data in natural language.",
+      "partner": "TechnologyOne (Plus)",
+      "stage": "deployed",
+      "quote": "PCYC Queensland has extended its existing relationship with TechnologyOne by adding Plus",
+      "sources": [
+        {
+          "title": "IT Brief Australia (23 Sep 2026)",
+          "url": "https://itbrief.com.au/story/australian-care-groups-adopt-technologyone-s-plus-ai"
+        }
+      ],
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "review_reason": ""
+    },
+    {
+      "id": "reachout--client-facing-chatbot",
+      "status": "tracker",
+      "organisation": "ReachOut",
+      "org_type": "Charity",
+      "state": "National",
+      "cause_area": "youth mental health",
+      "category": "client-facing chatbot or assistant",
+      "use_case": "Ask ReachOut is a free, anonymous 24/7 AI chatbot that answers young people's mental health concerns from ReachOut's own resource library and refers them on to human support.",
+      "partner": "Telstra Foundation",
+      "stage": "deployed",
+      "quote": "Ask ReachOut is a personalised support tool.",
+      "sources": [
+        {
+          "title": "ReachOut (25 Jun 2026)",
+          "url": "https://about.au.reachout.com/blog/reachout-and-telstra-foundation-partner-on-ai-tool-tackling-youth-mental-health"
+        },
+        {
+          "title": "Medianet (15 Oct 2026)",
+          "url": "https://newshub.medianet.com.au/2026/10/reachout-spokespeople-available-to-speak-about-ai-safety-and-youth-mental-health/176665/"
+        }
+      ],
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "review_reason": ""
+    },
+    {
+      "id": "royal-flying-doctor-service-sant--service-delivery",
+      "status": "tracker",
+      "organisation": "Royal Flying Doctor Service (SA&NT)",
+      "org_type": "Charity",
+      "state": "SA",
+      "cause_area": "rural and remote health",
+      "category": "service delivery or decision support",
+      "use_case": "Developing AI prototypes: a video-based tool that reads patients' vital signs remotely for telehealth assessment of outback patients, and speech-to-text that works in noisy aircraft cabins to cut clinicians' in-flight data entry.",
+      "partner": "UNCAPT",
+      "stage": "announced",
+      "quote": "This is not about replacing the people who do the caring – it's about empowering them.",
+      "sources": [
+        {
+          "title": "Royal Flying Doctor Service (21 Nov 2025)",
+          "url": "https://www.flyingdoctor.org.au/news/ai-enhanced-care/"
+        }
+      ],
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "review_reason": ""
+    },
+    {
+      "id": "settlement-services-international--internal-operations",
+      "status": "tracker",
+      "organisation": "Settlement Services International",
+      "org_type": "Charity",
+      "state": "NSW",
+      "cause_area": "refugee and migrant settlement",
+      "category": "internal operations or productivity",
+      "use_case": "AI-enabled transcription and case management to support SSI caseworkers with documentation.",
+      "partner": "",
+      "stage": "unclear",
+      "quote": "SSI's AI-enabled transcription and case management solution transforms how caseworkers operate",
+      "sources": [
+        {
+          "title": "Infoxchange (13 Apr 2026)",
+          "url": "https://www.infoxchange.org/au/news/2026/04/announcing-finalists-2026-australian-not-profit-technology-awards"
+        }
+      ],
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "review_reason": ""
+    },
+    {
+      "id": "surf-life-saving-nsw--service-delivery",
+      "status": "tracker",
+      "organisation": "Surf Life Saving NSW",
+      "org_type": "Charity",
+      "state": "NSW",
+      "cause_area": "water safety, emergency response",
+      "category": "service delivery or decision support",
+      "use_case": "AI-enabled beach cameras track swimmers who may be in trouble and alert head office and nearby lifesavers.",
+      "partner": "",
+      "stage": "deployed",
+      "quote": "Coyte's organisation has begun installing cameras with AI functionality at its beaches that track people potentially in trouble in the surf and send alerts to head office, as well as nearby lifesavers.",
+      "sources": [
+        {
+          "title": "IT Brief (16 Jun 2026)",
+          "url": "https://itbrief.news/story/strong-partnership-canva-openai-team-up-for-hackathon"
+        }
+      ],
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "review_reason": ""
+    },
+    {
+      "id": "the-salvation-army-australia--internal-operations",
+      "status": "tracker",
+      "organisation": "The Salvation Army Australia",
+      "org_type": "Charity",
+      "state": "National",
+      "cause_area": "social services",
+      "category": "internal operations or productivity",
+      "use_case": "'Goldie' AI assistant in Microsoft Teams lets staff ask plain-language questions and completes routine IT/HR requests.",
+      "partner": "Moveworks, ServiceNow, Microsoft Teams",
+      "stage": "deployed",
+      "quote": "Built on Moveworks and connected through ServiceNow EmployeeWorks and Microsoft Teams, the AI assistant lets staff ask plain-language questions while the machinery behind it routes requests, retrieves approved knowledge, and completes routine work.",
+      "sources": [
+        {
+          "title": "iTnews Asia (18 Aug 2026)",
+          "url": "https://www.itnews.asia/news/how-a-145-year-old-charity-beat-software-sprawl-with-goldie-628245"
+        }
+      ],
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "review_reason": ""
+    },
+    {
+      "id": "the-smith-family--data-analysis",
+      "status": "tracker",
+      "organisation": "The Smith Family",
+      "org_type": "Charity",
+      "state": "National",
+      "cause_area": "education, disadvantage",
+      "category": "data analysis, research or evaluation",
+      "use_case": "Predictive analytics and machine learning identify students at risk of dropping out so support can be targeted.",
+      "partner": "",
+      "stage": "deployed",
+      "quote": "employing artificial intelligence, predictive analytics and machine learning to target kids at risk",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_reason": ""
+    },
+    {
+      "id": "unicef-australia--fundraising",
+      "status": "tracker",
+      "organisation": "UNICEF Australia",
+      "org_type": "Charity",
+      "state": "National",
+      "cause_area": "children, international aid",
+      "category": "fundraising, marketing or communications",
+      "use_case": "Predictive targeting for direct-mail fundraising, reported to lift revenue 26% while cutting 15,000 mailouts.",
+      "partner": "Dataro",
+      "stage": "deployed",
+      "quote": "used the system to boost revenue by 26 per cent and reduce mailouts by 15,000",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_reason": ""
+    },
+    {
+      "id": "uniting-nswact--internal-operations",
+      "status": "tracker",
+      "organisation": "Uniting NSW.ACT",
+      "org_type": "Charity",
+      "state": "NSW",
+      "cause_area": "aged care and community services",
+      "category": "internal operations or productivity",
+      "use_case": "Buddy, a generative AI mobile assistant, turns frontline care workers' voice notes into multilingual progress notes and answers policy questions, cutting admin time for 1,200+ home and community care staff.",
+      "partner": "Microsoft (Azure, Tech for Social Impact); Engage Squared",
+      "stage": "deployed",
+      "quote": "Less than a year after its official launch, Buddy the AI assistant is already in the hands – and pockets – of more than 1,200 Uniting NSW.ACT home and community care workers.",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (10 Jun 2026)",
+          "url": "https://www.communitydirectors.com.au/articles/ai-tool-proves-its-a-carers-buddy"
+        },
+        {
+          "title": "Infoxchange (13 Apr 2026)",
+          "url": "https://www.infoxchange.org/au/news/2026/04/announcing-finalists-2026-australian-not-profit-technology-awards"
+        },
+        {
+          "title": "CIO (2026)",
+          "url": "https://www.cio.com/article/4225381/cio50-australia-2026-winners-unveiled.html"
+        },
+        {
+          "title": "Infoxchange (13 May 2026)",
+          "url": "https://www.infoxchange.org/au/news/2026/05/technology-social-justice-conference-2026-wrap-blog-collaboration-only-way-forward"
+        },
+        {
+          "title": "The Weekly SOURCE (24 Jul 2026)",
+          "url": "https://www.theweeklysource.com.au/inside-unitings-ai-platform-now-used-by-other-providers/"
+        }
+      ],
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-13",
+      "review_reason": ""
+    },
+    {
+      "id": "whiddon--service-delivery",
+      "status": "tracker",
+      "organisation": "Whiddon",
+      "org_type": "Charity",
+      "state": "NSW",
+      "cause_area": "aged care",
+      "category": "service delivery or decision support",
+      "use_case": "BestCARE uses passive sensor data and machine learning to flag aged care residents at risk of falls so staff can intervene early.",
+      "partner": "",
+      "stage": "unclear",
+      "quote": "BestCARE uses passive sensor data and machine learning to proactively identify fall risk in aged care residents",
+      "sources": [
+        {
+          "title": "Infoxchange (13 Apr 2026)",
+          "url": "https://www.infoxchange.org/au/news/2026/04/announcing-finalists-2026-australian-not-profit-technology-awards"
+        }
+      ],
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "review_reason": ""
+    },
+    {
+      "id": "wombat-housing--client-facing-chatbot",
+      "status": "tracker",
+      "organisation": "Wombat Housing",
+      "org_type": "Charity",
+      "state": "VIC",
+      "cause_area": "homelessness, youth",
+      "category": "client-facing chatbot or assistant",
+      "use_case": "'WomBot' chatbot gives young people at risk of homelessness support information within strict guardrails.",
+      "partner": "",
+      "stage": "deployed",
+      "quote": "employs strict guardrails on the information it uses to help young people at risk of homelessness",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_reason": ""
+    },
+    {
+      "id": "alannah-and-madeline-foundation--data-analysis",
+      "status": "review",
+      "organisation": "Alannah and Madeline Foundation",
+      "org_type": "Charity",
+      "state": "National",
+      "cause_area": "child safety",
+      "category": "data analysis, research or evaluation",
+      "use_case": "Using AI to work with its data at scale, moving from testing to real-world use with Infoxchange support on readiness and governance.",
+      "partner": "Infoxchange; National AI Centre",
+      "stage": "pilot",
+      "quote": "started exploring how AI could help us make better use of data at scale.",
+      "sources": [
+        {
+          "title": "National AI Centre (undated)",
+          "url": "https://www.ai.gov.au/practical-guides-and-learning/real-world-examples/helping-not-profits-get-value-ai"
+        }
+      ],
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "review_reason": "Use case is described only broadly and the page is undated; check what the AI actually does and its stage."
+    },
+    {
+      "id": "bolton-clarke--service-delivery",
+      "status": "review",
+      "organisation": "Bolton Clarke",
+      "org_type": "Charity",
+      "state": "National",
+      "cause_area": "aged care",
+      "category": "service delivery or decision support",
+      "use_case": "Trial of InteliCare's AI-driven smart care sensor platform in selected Bolton Clarke aged care facilities to monitor residents.",
+      "partner": "InteliCare",
+      "stage": "pilot",
+      "quote": "We look forward to completing a strategic partnership agreement to welcome Bolton Clarke as a foundation client",
+      "sources": [
+        {
+          "title": "Small Caps (29 Nov 2023)",
+          "url": "https://smallcaps.com.au/article/intelicare-trial-ai-driven-platform-bolton-clarke-aged-care-facilities"
+        }
+      ],
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "review_reason": "2023 source describing a non-binding trial agreement; check whether the trial went ahead and is still current."
+    },
+    {
+      "id": "community-legal-centres-australia--internal-operations",
+      "status": "review",
+      "organisation": "Community Legal Centres Australia",
+      "org_type": "NFP",
+      "state": "National",
+      "cause_area": "legal help",
+      "category": "internal operations or productivity",
+      "use_case": "National 18-month pilot to procure, deploy and train staff on AI tools to improve the efficiency of legal services in 6-8 community legal centres.",
+      "partner": "",
+      "stage": "announced",
+      "quote": "CLCA is leading a national pilot to explore how AI tools can be safely and ethically integrated",
+      "sources": [
+        {
+          "title": "Community Legal Centres Australia (Jul 2026)",
+          "url": "https://clcs.org.au/?p=20894"
+        },
+        {
+          "title": "Community Legal Centres Australia (Jul 2026)",
+          "url": "https://clcs.org.au/wp-content/uploads/2026/07/202607-AI-Project-Manager-role-advertisement-V2.pdf"
+        }
+      ],
+      "first_seen": "2026-10-13",
+      "last_seen": "2026-10-13",
+      "review_reason": "Source is a job ad; funder, tools and participating centres not yet named, so check stage before tracking."
+    },
+    {
+      "id": "dadfit--fundraising",
+      "status": "review",
+      "organisation": "Dadfit",
+      "org_type": "Unclear",
+      "state": "",
+      "cause_area": "men's health, parenting",
+      "category": "fundraising, marketing or communications",
+      "use_case": "ChatGPT with Zapier, HubSpot and ClickSend sends personalised messages and reminders to members.",
+      "partner": "ChatGPT, Zapier, HubSpot",
+      "stage": "deployed",
+      "quote": "is able to send personalised text messages, newsletters and other reminders to members",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_reason": "NFP status not confirmed."
+    },
+    {
+      "id": "ech--internal-operations",
+      "status": "review",
+      "organisation": "ECH",
+      "org_type": "NFP",
+      "state": "SA",
+      "cause_area": "aged care, retirement living",
+      "category": "internal operations or productivity",
+      "use_case": "Aged care provider trialling generative AI to cut staff time spent on administration.",
+      "partner": "",
+      "stage": "pilot",
+      "quote": "She talked about the goal of reducing 45-minute tasks to five minutes and being able to put more focus on care as a result.",
+      "sources": [
+        {
+          "title": "Australian Ageing Agenda (25 Mar 2024)",
+          "url": "https://www.australianageingagenda.com.au/technology/provider-experimenting-with-ai/"
+        }
+      ],
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "review_reason": "2024 source; check NFP status and whether the trial progressed."
+    },
+    {
+      "id": "freddymatch--internal-operations",
+      "status": "review",
+      "organisation": "FreddyMatch",
+      "org_type": "Unclear",
+      "state": "",
+      "cause_area": "volunteering",
+      "category": "internal operations or productivity",
+      "use_case": "AI matches volunteers to opportunities by skills, interests and location.",
+      "partner": "",
+      "stage": "deployed",
+      "quote": "uses AI to connect people to opportunities based on skills, interests, location",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_reason": "May be a platform company rather than an NFP; confirm before approving."
+    },
+    {
+      "id": "good-things-foundation-australia--other",
+      "status": "review",
+      "organisation": "Good Things Foundation Australia",
+      "org_type": "Charity",
+      "state": "National",
+      "cause_area": "digital inclusion",
+      "category": "other",
+      "use_case": "Funds ten community AI Hubs (libraries, community centres, MercyCare, COTA Tasmania and others) to teach digitally excluded people to use AI safely.",
+      "partner": "Telstra; Microsoft; LinkedIn",
+      "stage": "funded",
+      "quote": "provide free support to people who are digitally excluded to learn how to use AI",
+      "sources": [
+        {
+          "title": "Good Things Foundation Australia (26 Feb 2026, updated 14 Aug 2026)",
+          "url": "https://goodthingsaustralia.org/news/announcing-our-ai-hubs"
+        }
+      ],
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "review_reason": "AI literacy training rather than the charity using AI itself; confirm it belongs in the tracker."
+    },
+    {
+      "id": "gradient-institute--advocacy",
+      "status": "review",
+      "organisation": "Gradient Institute",
+      "org_type": "NFP research institute",
+      "state": "National",
+      "cause_area": "AI ethics",
+      "category": "advocacy, policy or legal",
+      "use_case": "Builds responsible-AI tools and resources for NFPs rather than using AI in its own services.",
+      "partner": "",
+      "stage": "deployed",
+      "quote": "developed a suite of tools and resources aimed at NFPs",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_reason": "Supports other NFPs' AI use; decide whether it belongs in the tracker."
+    },
+    {
+      "id": "infoxchange--other",
+      "status": "review",
+      "organisation": "Infoxchange",
+      "org_type": "NFP",
+      "state": "National",
+      "cause_area": "NFP sector digital capability",
+      "category": "other",
+      "use_case": "Co-designing NFP Digital Futures, a $16m sector-wide program to build not-for-profits' responsible AI and digital capability.",
+      "partner": "PwC Australia; Microsoft; Paul Ramsay Foundation; Ian Potter Foundation; Gandel Foundation",
+      "stage": "funded",
+      "quote": "67% are using generative AI, only 14% have an AI policy or guideline in place",
+      "sources": [
+        {
+          "title": "PwC Australia (6 May 2026)",
+          "url": "https://www.pwc.com.au/media/2026/helping-not-for-profits-thrive-in-the-age-of-ai.html"
+        }
+      ],
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "review_reason": "Sector capability program rather than a specific AI use; quote is a statistic, confirm whether it belongs."
+    },
+    {
+      "id": "kindship--client-facing-chatbot",
+      "status": "review",
+      "organisation": "Kindship",
+      "org_type": "Unclear",
+      "state": "",
+      "cause_area": "disability, NDIS",
+      "category": "client-facing chatbot or assistant",
+      "use_case": "'Barb' app helps people navigate the NDIS and manage plan budgets.",
+      "partner": "",
+      "stage": "deployed",
+      "quote": "Barb is to the NDIS as Siri is to Apple",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_reason": "May be a company rather than an NFP; confirm before approving."
+    },
+    {
+      "id": "lifeline-australia--internal-operations",
+      "status": "review",
+      "organisation": "Lifeline Australia",
+      "org_type": "Charity",
+      "state": "National",
+      "cause_area": "crisis support, mental health",
+      "category": "internal operations or productivity",
+      "use_case": "AI-agent training simulator lets trainee crisis supporters practise counselling microskills with real-time feedback.",
+      "partner": "OpenAI, Canva (Build for Good hackathon)",
+      "stage": "unclear",
+      "quote": "Utilising AI agents, the simulator allows students to practice counselling microskills and receive constructive feedback in real-time.",
+      "sources": [
+        {
+          "title": "Third Sector (26 Jun 2026)",
+          "url": "https://thirdsector.com.au/can-ai-ease-the-not-for-profit-capacity-crunch/"
+        }
+      ],
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "review_reason": "Built at a hackathon; check whether the simulator is actually in use beyond a prototype."
+    },
+    {
+      "id": "neo-care--service-delivery",
+      "status": "review",
+      "organisation": "Neo Care",
+      "org_type": "Unclear",
+      "state": "",
+      "cause_area": "aged care, safety",
+      "category": "service delivery or decision support",
+      "use_case": "Audio monitoring detects falls by listening for events of concern.",
+      "partner": "",
+      "stage": "pilot",
+      "quote": "uses an audio monitoring system to detect falls by listening for events of concern",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_reason": "May be a company rather than an NFP; confirm before approving."
+    },
+    {
+      "id": "neon-carrot--service-delivery",
+      "status": "review",
+      "organisation": "Neon Carrot",
+      "org_type": "Unclear",
+      "state": "",
+      "cause_area": "aged care",
+      "category": "service delivery or decision support",
+      "use_case": "Retrieval-based assistant answers aged care workers' questions from Aged Care Quality and Safety Commission documents.",
+      "partner": "",
+      "stage": "pilot",
+      "quote": "lets aged care workers input queries and instantly receive contextually appropriate responses",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_reason": "May be a company rather than an NFP; confirm before approving."
+    },
+    {
+      "id": "open-corridor--data-analysis",
+      "status": "review",
+      "organisation": "Open Corridor",
+      "org_type": "Unclear",
+      "state": "",
+      "cause_area": "environment",
+      "category": "data analysis, research or evaluation",
+      "use_case": "Sustainability intelligence tools.",
+      "partner": "",
+      "stage": "unclear",
+      "quote": "democratising sustainability intelligence",
+      "sources": [
+        {
+          "title": "Institute of Community Directors Australia (18 Sep 2025)",
+          "url": "https://www.communitydirectors.com.au/articles/forty-three-examples-of-nfps-and-charities-using-artificial-intelligence"
+        }
+      ],
+      "first_seen": "2026-09-30",
+      "last_seen": "2026-09-30",
+      "review_reason": "NFP status and AI use are vague in the source."
+    },
+    {
+      "id": "raise-foundation--service-delivery",
+      "status": "review",
+      "organisation": "Raise Foundation",
+      "org_type": "Charity",
+      "state": "National",
+      "cause_area": "youth mentoring",
+      "category": "service delivery or decision support",
+      "use_case": "Raise Digital, an AI-powered online mentoring platform, lets trained volunteers safely mentor at-risk young people anywhere in Australia.",
+      "partner": "Tacklit",
+      "stage": "unclear",
+      "quote": "an AI-powered online mentoring platform enabling trained volunteers to safely support at-risk young people anywhere in Australia",
+      "sources": [
+        {
+          "title": "Infoxchange (13 Apr 2026)",
+          "url": "https://www.infoxchange.org/au/news/2026/04/announcing-finalists-2026-australian-not-profit-technology-awards"
+        }
+      ],
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "review_reason": "Finalist entry is listed as 'Tacklit – Raise Digital'; confirm Raise Foundation is the NFP lead rather than vendor Tacklit, and what the AI does."
+    },
+    {
+      "id": "refugee-advice-and-casework-service--internal-operations",
+      "status": "review",
+      "organisation": "Refugee Advice and Casework Service (RACS)",
+      "org_type": "Community legal centre",
+      "state": "NSW",
+      "cause_area": "refugee legal help",
+      "category": "internal operations or productivity",
+      "use_case": "Exploring agentic AI tools such as Atlassian Rovo embedded in workflows for knowledge management and meeting notes.",
+      "partner": "Atlassian (Rovo, Atlassian for Nonprofits)",
+      "stage": "unclear",
+      "quote": "explored how agentic AI tools such as Rovo can be embedded into workflows",
+      "sources": [
+        {
+          "title": "Infoxchange (13 May 2026)",
+          "url": "https://www.infoxchange.org/au/news/2026/05/technology-social-justice-conference-2026-wrap-blog-collaboration-only-way-forward"
+        }
+      ],
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-01",
+      "review_reason": "Source only says RACS discussed how agentic AI can be embedded; confirm actual AI use and stage."
+    },
+    {
+      "id": "southern-cross-care--internal-operations",
+      "status": "review",
+      "organisation": "Southern Cross Care",
+      "org_type": "Charity",
+      "state": "",
+      "cause_area": "aged care",
+      "category": "internal operations or productivity",
+      "use_case": "Uses TechnologyOne's Plus AI to give frontline aged care teams simpler natural-language access to information.",
+      "partner": "TechnologyOne (Plus)",
+      "stage": "deployed",
+      "quote": "Southern Cross Care is using it to simplify access to information for frontline teams across its aged care operations.",
+      "sources": [
+        {
+          "title": "IT Brief Australia (23 Sep 2026)",
+          "url": "https://itbrief.com.au/story/australian-care-groups-adopt-technologyone-s-plus-ai"
+        },
+        {
+          "title": "Pulse+IT (25 Sep 2026)",
+          "url": "https://www.pulseit.news/australian-digital-health/technologyone-plus-adopted-by-aged-care-community-providers/"
+        }
+      ],
+      "first_seen": "2026-10-01",
+      "last_seen": "2026-10-06",
+      "review_reason": "Article does not say which state's Southern Cross Care entity this is."
+    },
+    {
+      "id": "surf-life-saving-australia--data-analysis",
+      "status": "review",
+      "organisation": "Surf Life Saving Australia",
+      "org_type": "Charity",
+      "state": "National",
+      "cause_area": "water safety, emergency response",
+      "category": "data analysis, research or evaluation",
+      "use_case": "AI tool consolidates large datasets so incident response teams get critical information faster.",
+      "partner": "OpenAI, Canva (Build for Good hackathon)",
+      "stage": "unclear",
+      "quote": "By building an AI tool to consolidate massive datasets, the organisation can now deliver critical information to incident response teams faster.",
+      "sources": [
+        {
+          "title": "Third Sector (26 Jun 2026)",
+          "url": "https://thirdsector.com.au/can-ai-ease-the-not-for-profit-capacity-crunch/"
+        }
+      ],
+      "first_seen": "2026-10-06",
+      "last_seen": "2026-10-06",
+      "review_reason": "Built at a hackathon; stage unclear and quote may be a partial excerpt."
+    },
+    {
+      "id": "vision-australia--service-delivery",
+      "status": "review",
+      "organisation": "Vision Australia",
+      "org_type": "Charity",
+      "state": "National",
+      "cause_area": "blindness and low vision",
+      "category": "service delivery or decision support",
+      "use_case": "Access Tech Specialists help people who are blind or have low vision find and use AI tools such as Be My AI in daily life, promoted via a monthly AI newsletter.",
+      "partner": "Be My AI (third-party tools)",
+      "stage": "deployed",
+      "quote": "Our team can help you find tools and strategies that work for you.",
+      "sources": [
+        {
+          "title": "Vision Australia (29 Sep 2026)",
+          "url": "https://www.visionaustralia.org/community/news/2026-09-29/vision-australia-ai-newsletter-september-2026"
+        }
+      ],
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "review_reason": "Supports clients to use third-party AI tools rather than running its own AI; check whether this counts as an in-scope use case."
+    }
+  ]
+}

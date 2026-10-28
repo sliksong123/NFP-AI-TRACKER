@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NFP AI Use-Case Tracker</title>
+<meta name="description" content="Named Australian not-for-profits using, piloting or funding AI, each backed by a source and a quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a register ledger. Summary strip, then filter bar, then one entry per case, like rows in the ACNC register. */
+:root {
+  --bg: #f5f7f6;
+  --surface: #ffffff;
+  --ink: #16231f;
+  --muted: #5b6b66;
+  --line: #d9e1de;
+  --accent: #0f6b5c;        /* eucalypt */
+  --accent-soft: #e2f0ec;
+  --wattle: #9a6a00;        /* review / attention */
+  --wattle-soft: #fbf1d9;
+  --danger: #a23b2c;
+  --deployed: #1d6a3a; --deployed-soft: #e3f3e8;
+  --pilot: #2d5aa0;    --pilot-soft: #e6eefa;
+  --early: #6b5b95;    --early-soft: #efebf7;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f1614; --surface: #16201d; --ink: #e6eeeb; --muted: #97a8a2; --line: #2a3733;
+  --accent: #4fb8a3; --accent-soft: #173029; --wattle: #e0b34a; --wattle-soft: #2e2615; --danger: #e5816f;
+  --deployed: #6fcf8f; --deployed-soft: #16301f; --pilot: #8db3f0; --pilot-soft: #172338;
+  --early: #b9a8e6; --early-soft: #241e33; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0f1614; --surface: #16201d; --ink: #e6eeeb; --muted: #97a8a2; --line: #2a3733;
+  --accent: #4fb8a3; --accent-soft: #173029; --wattle: #e0b34a; --wattle-soft: #2e2615; --danger: #e5816f;
+  --deployed: #6fcf8f; --deployed-soft: #16301f; --pilot: #8db3f0; --pilot-soft: #172338;
+  --early: #b9a8e6; --early-soft: #241e33; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 15px/1.55 var(--font-body); }
+.wrap { max-width: 1080px; margin: 0 auto; padding-inline: 16px; padding-block: 28px 64px; display: grid; gap: 22px; }
+header { display: grid; gap: 6px; }
+.eyebrow { font: 500 12px/1 var(--font-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+h1 { font: 700 clamp(28px, 4.4vw, 42px)/1.08 var(--font-display); margin: 0; text-wrap: balance; letter-spacing: -.01em; }
+.lede { color: var(--muted); margin: 0; max-width: 64ch; }
+.runline { font: 400 12.5px/1.4 var(--font-mono); color: var(--muted); }
+
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.stat { background: var(--surface); padding: 14px 16px; display: grid; gap: 2px; }
+.stat b { font: 700 28px/1.1 var(--font-display); font-variant-numeric: tabular-nums; }
+.stat span { font-size: 12.5px; color: var(--muted); }
+.stat.attn b { color: var(--wattle); }
+@media (max-width: 620px) { .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+.bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.tabs { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface); }
+.tabs button { border: 0; background: transparent; color: var(--ink); font: 600 14px var(--font-body); padding: 8px 14px; cursor: pointer; display: inline-flex; gap: 6px; align-items: center; }
+.tabs button[aria-selected="true"] { background: var(--accent); color: var(--surface); }
+.tabs .n { font: 500 12px var(--font-mono); opacity: .8; }
+.bar input, .bar select { font: 14px var(--font-body); color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; min-width: 0; }
+.bar input[type="search"] { flex: 1 1 220px; }
+.bar select { flex: 0 1 auto; }
+.btn { font: 600 13px var(--font-body); border-radius: 7px; padding: 7px 12px; cursor: pointer; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+.btn:hover { border-color: var(--accent); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.btn.warn { color: var(--danger); }
+.btn:disabled { opacity: .5; cursor: default; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.list { display: grid; gap: 12px; }
+.entry { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; display: grid; gap: 10px; min-width: 0; }
+.entry.review { border-left: 4px solid var(--wattle); }
+.top { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: baseline; justify-content: space-between; }
+.org { font: 700 19px/1.25 var(--font-display); margin: 0; }
+.abn { font: 400 12.5px var(--font-mono); color: var(--muted); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font: 500 12px/1 var(--font-body); padding: 5px 8px; border-radius: 999px; background: var(--bg); border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+.chip.stage-deployed { background: var(--deployed-soft); color: var(--deployed); border-color: transparent; }
+.chip.stage-pilot { background: var(--pilot-soft); color: var(--pilot); border-color: transparent; }
+.chip.stage-announced, .chip.stage-funded { background: var(--early-soft); color: var(--early); border-color: transparent; }
+.chip.cat { background: var(--accent-soft); color: var(--accent); border-color: transparent; }
+.usecase { margin: 0; max-width: 72ch; }
+blockquote { margin: 0; padding: 8px 12px; border-left: 2px solid var(--line); color: var(--muted); font-style: italic; max-width: 72ch; overflow-wrap: anywhere; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12.5px; color: var(--muted); }
+.meta a { color: var(--accent); overflow-wrap: anywhere; }
+.reason { font-size: 13px; color: var(--wattle); background: var(--wattle-soft); padding: 6px 10px; border-radius: 6px; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.actions label { font-size: 12.5px; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; }
+.actions select { font: 13px var(--font-body); color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 5px 6px; }
+
+.empty { background: var(--surface); border: 1px dashed var(--line); border-radius: 10px; padding: 28px 20px; color: var(--muted); display: grid; gap: 6px; }
+.empty strong { color: var(--ink); font: 700 17px var(--font-display); }
+.toast { position: fixed; left: 50%; bottom: calc(18px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 9px 14px; border-radius: 8px; font-size: 13.5px; }
+footer { font-size: 12.5px; color: var(--muted); max-width: 72ch; }
+footer a { color: var(--accent); }
+@media (prefers-reduced-motion: no-preference) { .entry { transition: border-color .15s; } }
+</style>
+<style>[hidden]{display:none!important} body{margin:0}</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Australian not-for-profits · AI adoption</div>
+    <h1>NFP AI Use-Case Tracker</h1>
+    <p class="lede">Named Australian charities and community organisations using, piloting or funding AI, each backed by a source and a quote.</p>
+    <div class="runline" id="runline">Loading the database…</div>
+  </header>
+
+  <section class="stats" aria-label="Summary">
+    <div class="stat"><b id="s-total">–</b><span>Cases tracked</span></div>
+    <div class="stat"><b id="s-deployed">–</b><span>Deployed</span></div>
+    <div class="stat"><b id="s-pilot">–</b><span>Pilots</span></div>
+    <div class="stat attn"><b id="s-review">–</b><span>Not yet verified</span></div>
+  </section>
+
+  <section class="bar" aria-label="Filters">
+    <div class="tabs" role="tablist">
+      <button id="tab-tracker" role="tab" aria-selected="true" data-view="tracker">Verified <span class="n" id="n-tracker">0</span></button>
+      <button id="tab-review" role="tab" aria-selected="false" data-view="review">Not yet verified <span class="n" id="n-review">0</span></button>
+    </div>
+    <input id="q" type="search" placeholder="Search organisation, tool, cause…" aria-label="Search">
+    <select id="f-stage" aria-label="Stage"><option value="">All stages</option></select>
+    <select id="f-cat" aria-label="Use case"><option value="">All use cases</option></select>
+    <select id="f-state" aria-label="State"><option value="">All states</option></select>
+    <button class="btn" id="export" type="button">Download CSV</button>
+  </section>
+
+  <section class="list" id="list" aria-live="polite">
+    <div class="empty"><strong>Loading cases</strong><span>Cases are read from data/cases.json in this repository.</span></div>
+  </section>
+
+  <footer>Each case links to its source. Quotes are taken from the source page; check a quote against the original before citing it. "Not yet verified" cases may involve for-profit companies or unclear details. Data: <a href="data/cases.json">data/cases.json</a>.</footer>
+</div>
+
+<script>
+const DATA_URL = "data/cases.json";
+const SHOW_UNVERIFIED = true; // set to false to hide the "Not yet verified" tab
+const STAGES = ["deployed", "pilot", "funded", "announced", "unclear", "discontinued"];
+const CATS = ["client-facing chatbot or assistant", "intake, triage or referral", "service delivery or decision support",
+  "fundraising, marketing or communications", "grant writing or reporting", "data analysis, research or evaluation",
+  "internal operations or productivity", "advocacy, policy or legal", "other"];
+const STATES = ["NSW", "VIC", "QLD", "WA", "SA", "TAS", "ACT", "NT", "National"];
+
+const state = { cases: [], meta: null, view: "tracker", q: "", stage: "", cat: "", st: "" };
+const $ = (id) => document.getElementById(id);
+
+function fill(sel, values) { for (const v of values) { const o = document.createElement("option"); o.value = v; o.textContent = v[0].toUpperCase() + v.slice(1); sel.append(o); } }
+fill($("f-stage"), STAGES); fill($("f-cat"), CATS); fill($("f-state"), STATES);
+
+function fmtDate(s) { if (!s) return ""; const d = new Date(s + (s.length === 10 ? "T00:00:00" : "")); return isNaN(d) ? s : d.toLocaleDateString("en-AU", { day: "numeric", month: "short", year: "numeric" }); }
+function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+function host(u) { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return u; } }
+
+function matches(c) {
+  if (c.status !== state.view) return false;
+  if (state.stage && c.stage !== state.stage) return false;
+  if (state.cat && c.category !== state.cat) return false;
+  if (state.st && c.state !== state.st) return false;
+  if (state.q) {
+    const hay = [c.organisation, c.org_type, c.use_case, c.partner, c.cause_area, c.quote].join(" ").toLowerCase();
+    if (!hay.includes(state.q.toLowerCase())) return false;
+  }
+  return true;
+}
+
+function render() {
+  const tracked = state.cases.filter((c) => c.status === "tracker");
+  const review = state.cases.filter((c) => c.status === "review");
+  $("s-total").textContent = tracked.length;
+  $("s-deployed").textContent = tracked.filter((c) => c.stage === "deployed").length;
+  $("s-pilot").textContent = tracked.filter((c) => c.stage === "pilot").length;
+  $("s-review").textContent = review.length;
+  $("n-tracker").textContent = tracked.length; $("n-review").textContent = review.length;
+  const m = state.meta;
+  $("runline").textContent = m && m.last_updated ? `Data as of ${fmtDate(m.last_updated)} · ${state.cases.length} cases in the database` : `${state.cases.length} cases in the database`;
+
+  const list = $("list"); list.replaceChildren();
+  const rows = state.cases.filter(matches).sort((a, b) => (b.last_seen || "").localeCompare(a.last_seen || "") || (a.organisation || "").localeCompare(b.organisation || ""));
+  if (!rows.length) {
+    const e = el("div", "empty");
+    const filtered = state.q || state.stage || state.cat || state.st;
+    e.append(el("strong", null, filtered ? "No cases match these filters" : "No cases here yet"));
+    e.append(el("span", null, filtered ? "Clear the search or pick a different stage, use case or state." : "Add cases to data/cases.json to see them here."));
+    list.append(e); return;
+  }
+  for (const c of rows) list.append(entry(c));
+}
+
+function entry(c) {
+  const art = el("article", "entry" + (c.status === "review" ? " review" : ""));
+  const top = el("div", "top");
+  const name = el("div"); name.append(el("h2", "org", c.organisation || "Unnamed organisation"));
+  const sub = [c.org_type, c.partner ? "with " + c.partner : ""].filter(Boolean).join(" · ");
+  if (sub) name.append(el("div", "abn", sub));
+  top.append(name);
+  const chips = el("div", "chips");
+  if (c.stage) chips.append(el("span", "chip stage-" + c.stage, c.stage));
+  if (c.category) chips.append(el("span", "chip cat", c.category));
+  if (c.state) chips.append(el("span", "chip", c.state));
+  if (c.cause_area) chips.append(el("span", "chip", c.cause_area));
+  top.append(chips);
+  art.append(top);
+  if (c.use_case) art.append(el("p", "usecase", c.use_case));
+  if (c.quote) art.append(el("blockquote", null, `“${c.quote}”`));
+  const meta = el("div", "meta");
+  for (const src of (c.sources || []).slice(0, 4)) {
+    if (!/^https?:\/\//.test(src.url || "")) continue;
+    const a = el("a", null, src.title || host(src.url)); a.href = src.url; a.target = "_blank"; a.rel = "noopener"; meta.append(a);
+  }
+  if (c.first_seen) meta.append(el("span", null, `First seen ${fmtDate(c.first_seen)}`));
+  if (c.last_seen && c.last_seen !== c.first_seen) meta.append(el("span", null, `Last seen ${fmtDate(c.last_seen)}`));
+  art.append(meta);
+  if (c.status === "review" && c.review_reason) art.append(el("div", "reason", "Why it isn't verified: " + c.review_reason));
+  return art;
+}
+
+function csv() {
+  const cols = ["id", "status", "organisation", "org_type", "state", "cause_area", "category", "use_case", "partner", "stage", "quote", "sources", "first_seen", "last_seen", "review_reason"];
+  const esc = (v) => { const s = v == null ? "" : String(v); return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; };
+  const lines = [cols.join(",")];
+  for (const c of state.cases.filter((x) => SHOW_UNVERIFIED || x.status === "tracker"))
+    lines.push(cols.map((k) => esc(k === "sources" ? (c.sources || []).map((s) => s.url).join(" | ") : c[k])).join(","));
+  return lines.join("\n");
+}
+
+for (const b of document.querySelectorAll(".tabs button")) b.onclick = () => {
+  state.view = b.dataset.view;
+  for (const x of document.querySelectorAll(".tabs button")) x.setAttribute("aria-selected", String(x === b));
+  render();
+};
+$("q").oninput = (e) => { state.q = e.target.value.trim(); render(); };
+$("f-stage").onchange = (e) => { state.stage = e.target.value; render(); };
+$("f-cat").onchange = (e) => { state.cat = e.target.value; render(); };
+$("f-state").onchange = (e) => { state.st = e.target.value; render(); };
+$("export").onclick = () => {
+  const blob = new Blob(["\ufeff" + csv()], { type: "text/csv;charset=utf-8" });
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob);
+  a.download = `nfp-ai-tracker-${(state.meta && state.meta.last_updated) || "export"}.csv`;
+  document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+};
+if (!SHOW_UNVERIFIED) { $("tab-review").hidden = true; document.querySelector(".stat.attn").hidden = true; }
+
+fetch(DATA_URL, { cache: "no-cache" })
+  .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then((db) => {
+    state.meta = db.meta || null;
+    state.cases = (db.cases || []).filter((c) => c.status === "tracker" || (SHOW_UNVERIFIED && c.status === "review"));
+    render();
+  })
+  .catch(() => {
+    const list = $("list"); list.replaceChildren();
+    const e = el("div", "empty");
+    e.append(el("strong", null, "Couldn't load data/cases.json"));
+    e.append(el("span", null, location.protocol === "file:" ? "Browsers block reading files when a page is opened directly. Run `python -m http.server` in this folder and open http://localhost:8000, or view the page on GitHub Pages." : "Check that data/cases.json exists and is valid JSON (run scripts/validate.py)."));
+    list.append(e); $("runline").textContent = "Database not loaded";
+  });
+</script>
+</body>
+</html>

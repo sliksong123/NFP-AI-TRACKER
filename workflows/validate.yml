@@ -1,0 +1,19 @@
+name: Check database
+
+# Runs only when data/cases.json changes. It never edits the data;
+# it just flags mistakes (a red cross on the commit) before they reach the site.
+on:
+  push:
+    paths: ["data/**"]
+  pull_request:
+    paths: ["data/**"]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/validate.py
